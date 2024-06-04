@@ -1,0 +1,33 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+
+  <servlet>
+    <servlet-name>SearchForWord</servlet-name>
+    <servlet-class>SearchForWordServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>GetFile</servlet-name>
+    <servlet-class>GetFileServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SearchForWord</servlet-name>
+    <url-pattern>/SearchForWord</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>GetFile</servlet-name>
+    <url-pattern>/GetFile</url-pattern>
+  </servlet-mapping>
+
+  <jsp-config>
+    <jsp-property-group>
+      <url-pattern>*.jsp</url-pattern>
+      <page-encoding>UTF-8</page-encoding>
+    </jsp-property-group>
+  </jsp-config>
+</web-app>
